@@ -1,4 +1,3 @@
-# Use Ubuntu as the base image
 FROM ubuntu:latest
 
 # Set the working directory inside the container
@@ -10,12 +9,13 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Copy the HTML file and the 'styles' directory into the container's web root directory
-COPY index.html /var/www/html
-COPY styles /var/www/html/styles
+# Copy the HTML file and the 'styles.css' file into the container's web root directory
+COPY index.html /app/var/www/html
+COPY css/styles.css /app/var/www/html/css
 
 # Expose port 80 for the NGINX web server
-EXPOSE 80 
+EXPOSE 80
 
 # Start NGINX in the foreground
 CMD ["nginx", "-g", "daemon off;"]
+
