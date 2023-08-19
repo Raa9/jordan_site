@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 # Copy the HTML file and the 'styles.css' file into the container's web root directory
 COPY index.html /var/www/html
-COPY jordan_site/css /var/www/html/
+COPY css /var/www/html/
 
 # Expose port 80 for the NGINX web server
 EXPOSE 80
