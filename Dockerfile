@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /var/www/html
 
 # Update the package repositories and install NGINX
 RUN apt-get update && \
@@ -10,8 +10,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy the HTML file and the 'styles.css' file into the container's web root directory
-COPY index.html /app/var/www/html
-COPY jordan_site/css /app/var/www/html/
+COPY index.html /var/www/html
+COPY jordan_site/css /var/www/html/
 
 # Expose port 80 for the NGINX web server
 EXPOSE 80
