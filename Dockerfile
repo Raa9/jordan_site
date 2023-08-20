@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 # Copy the HTML file and the 'styles.css' file into the container's web root directory
 COPY index.html /var/www/html
-COPY css /var/www/html/
+# COPY css /var/www/html/
 COPY style.css /var/www/html/
 COPY My_project.png /var/www/html/
 COPY pngwing.com.png /var/www/html/
