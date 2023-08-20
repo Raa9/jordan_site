@@ -13,7 +13,8 @@ RUN apt-get update && \
 COPY index.html /var/www/html
 COPY css /var/www/html/
 COPY style.css /var/www/html/
-
+COPY My_project.png /var/www/html/
+COPY pngwing.com.png /var/www/html/
 
 # Expose port 80 for the NGINX web server
 EXPOSE 80
