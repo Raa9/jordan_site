@@ -12,6 +12,9 @@ html,body{
     width: 100%;
     overflow: hidden;
 }
+body{
+    overflow: hidden;
+}
 #main{
     height: 100%;
     width: 100%;
@@ -20,7 +23,6 @@ html,body{
     /* background: linear-gradient(to right,#232533ce,#eeefee); */
     display: flex;
     position: relative;
-    overflow: hidden;
 }
 #nav{
     margin-top: 8px;
