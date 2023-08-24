@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* color: black; */
     color: white;
     letter-spacing: 1px;
     
@@ -150,7 +149,8 @@ body{
 }
 #right{
     background-color: #EC2B56;
-    background: linear-gradient(#EC2B56,#f71949);
+/*     background: linear-gradient(#EC2B56,#f71949); */
+    color: black;
     /* background: linear-gradient(to left,#555559eb,#eeefee); */
     height: 100%;
     width: 40%;
